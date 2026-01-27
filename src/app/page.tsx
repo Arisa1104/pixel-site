@@ -10,22 +10,29 @@ export default function Home() {
     <div className="min-h-dvh bg-paper text-ink">
       <SiteHeader />
 
-      <main className="mx-auto w-full max-w-5xl px-6 py-14">
-        <section className="grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white/40 px-4 py-2 text-xs text-ink/70 shadow-sm">
-              <span className="h-2 w-2 rounded-full bg-accent-rose" />
-              Daily AI tool notes, curated with calm.
-            </div>
+      <main className="relative mx-auto w-full max-w-5xl px-6 py-14">
+        {/* Decorative blobs */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -top-16 right-[-8%] h-96 w-96 blob-shape bg-accent-rose/20 blur-3xl animate-blob" />
+          <div className="absolute bottom-0 left-[-10%] h-80 w-80 blob-shape bg-accent-sage/30 blur-3xl animate-blob animation-delay-2000" />
+        </div>
 
-            <h1 className="mt-6 font-display text-5xl tracking-tight md:text-6xl">
-              Pixel’s Desk
-              <span className="block text-ink/55">An editorial brief for what’s trending right now.</span>
+        <section className="relative grid gap-10 md:grid-cols-12 md:items-end">
+          <div className="md:col-span-7">
+            <p className="font-sans text-[11px] tracking-[0.3em] uppercase text-accent-rose">The editorial journal</p>
+
+            <h1 className="mt-6 font-display text-6xl leading-none tracking-tight md:text-7xl">
+              Curated <span className="italic font-normal">notes</span>
+              <br />
+              on AI tools
+              <span className="text-accent-rose">.</span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-7 text-ink/75">
-              Every day: a handful of AI tools that are getting attention (mostly from X), distilled into practical
-              summaries. Soft design, sharp content.
+            <div className="editorial-line mt-10 w-2/3" />
+
+            <p className="mt-8 max-w-xl text-base leading-7 text-ink/75">
+              Every day, Pixel collects a handful of tools that are gaining attention (X-first), then verifies and distills
+              them into calm, practical summaries.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -46,16 +53,19 @@ export default function Home() {
 
           <div className="md:col-span-5">
             <div className="rounded-3xl border border-ink/10 bg-white/40 p-6 shadow-sm">
-              <div className="text-xs text-ink/55">Latest</div>
+              <div className="font-sans text-[10px] tracking-[0.2em] uppercase text-accent-rose">Latest</div>
               {latest ? (
                 <>
-                  <div className="mt-2 font-display text-2xl tracking-tight">{latest.frontmatter.title}</div>
+                  <div className="mt-2 font-display text-3xl tracking-tight">{latest.frontmatter.title}</div>
                   {latest.frontmatter.description ? (
-                    <p className="mt-3 text-sm leading-6 text-ink/70">{latest.frontmatter.description}</p>
+                    <p className="mt-4 text-sm leading-6 text-ink/70">{latest.frontmatter.description}</p>
                   ) : null}
-                  <div className="mt-6">
-                    <Link className="text-sm text-ink/80 hover:text-ink" href={`/blog/${latest.slug}`}>
-                      Open post <span className="text-accent-rose">→</span>
+                  <div className="mt-7">
+                    <Link
+                      className="inline-flex items-center gap-2 font-sans text-xs tracking-widest uppercase text-ink/80 hover:text-ink"
+                      href={`/blog/${latest.slug}`}
+                    >
+                      Read narrative <span className="text-accent-rose">→</span>
                     </Link>
                   </div>
                 </>
@@ -66,7 +76,7 @@ export default function Home() {
 
             <div aria-hidden className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-ink/15 to-transparent" />
 
-            <p className="mt-6 text-xs leading-6 text-ink/60">
+            <p className="mt-6 font-sans text-[11px] leading-6 text-ink/60">
               Notes: “Trending” is inferred via public web signals (not the official X trend API). Links are verified when
               possible.
             </p>

@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Noto_Sans_JP, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const editorialSerif = Playfair_Display({
+  variable: "--font-editorial-serif",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const editorialSans = Noto_Sans_JP({
+  variable: "--font-editorial-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -40,9 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${editorialSerif.variable} ${editorialSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

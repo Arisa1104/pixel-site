@@ -12,8 +12,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-editorial-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-editorial-serif);
 
   /* Map to Tailwind theme tokens */
   --color-paper: var(--paper);
@@ -32,8 +33,40 @@ body {
 }
 
 /* Editorial typography helpers */
+body {
+  font-family: var(--font-editorial-sans);
+}
+
+.font-display {
+  font-family: var(--font-editorial-serif);
+}
+
 .prose {
   font-size: 1rem;
+}
+
+.editorial-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--accent-rose) 80%, transparent), transparent);
+}
+
+.blob-shape {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(22px, -26px) scale(1.08); }
+  66% { transform: translate(-18px, 18px) scale(0.96); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
 }
 
 .prose.prose-ink {

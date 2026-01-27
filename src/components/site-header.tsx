@@ -3,15 +3,14 @@ import Link from "next/link";
 function PixelMark() {
   return (
     <span className="inline-flex items-center gap-3">
-      <span
-        aria-hidden
-        className="grid h-9 w-9 place-items-center rounded-2xl border border-ink/10 bg-paper shadow-sm"
-      >
-        <span className="h-2.5 w-2.5 rounded-sm bg-accent-rose" />
+      <span aria-hidden className="relative grid h-9 w-9 place-items-center">
+        <span className="absolute inset-0 blob-shape bg-accent-rose/90 shadow-sm" />
+        <span className="absolute -left-3 -top-3 h-10 w-10 blob-shape bg-accent-sage/35 blur-xl" />
+        <span className="absolute -bottom-3 -right-3 h-10 w-10 blob-shape bg-accent-rose/25 blur-xl" />
       </span>
       <span className="leading-tight">
-        <span className="block font-display text-lg tracking-tight">Pixel</span>
-        <span className="block text-xs text-ink/60">an editorial AI desk</span>
+        <span className="block font-display text-lg tracking-tight italic">Pixel.</span>
+        <span className="block text-[11px] font-sans tracking-[0.22em] uppercase text-ink/60">editorial journal</span>
       </span>
     </span>
   );

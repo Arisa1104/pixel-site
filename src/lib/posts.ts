@@ -7,6 +7,8 @@ export type PostFrontmatter = {
   date: string; // YYYY-MM-DD
   description?: string;
   tags?: string[];
+  category?: string;
+  image?: string;
 };
 
 export type Post = {
