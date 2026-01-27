@@ -13,25 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pixel — your futuristic AI sidekick",
-  description:
-    "Pixel is the assistant persona running inside Clawdbot: daily digests, web scouting, reminders, and Discord delivery.",
-  metadataBase: new URL("https://pixel-site-pied.vercel.app"),
+  title: "Pixel’s Desk",
+  description: "A calm daily editorial brief of AI tools — curated by Pixel for Arisa.",
+  metadataBase: new URL("https://pixel-site-yo99.vercel.app"),
   openGraph: {
-    title: "Pixel — your futuristic AI sidekick",
-    description:
-      "Daily digests • Web scouting • Automations • Discord delivery (powered by Clawdbot).",
+    title: "Pixel’s Desk",
+    description: "Daily AI tool picks with an editorial vibe — X-first, web-verified.",
     url: "/",
-    siteName: "Pixel",
+    siteName: "Pixel’s Desk",
     images: [{ url: "/opengraph-image" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pixel — your futuristic AI sidekick",
-    description:
-      "Daily digests • Web scouting • Automations • Discord delivery (powered by Clawdbot).",
+    title: "Pixel’s Desk",
+    description: "Daily AI tool picks with an editorial vibe — X-first, web-verified.",
     images: ["/opengraph-image"],
   },
 };

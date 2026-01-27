@@ -1,131 +1,80 @@
 import Link from "next/link";
-import { DemoChat } from "@/components/demo-chat";
-import { DemoVideo } from "@/components/demo-video";
-import { FeatureGrid } from "@/components/feature-grid";
-import { Footer } from "@/components/footer";
-import { HeroOrb } from "@/components/hero-orb";
-import { TopNav } from "@/components/top-nav";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
+  const latest = getAllPosts()[0];
+
   return (
-    <div className="min-h-dvh bg-black text-white">
-      <TopNav />
+    <div className="min-h-dvh bg-paper text-ink">
+      <SiteHeader />
 
-      {/* Background */}
-      <div aria-hidden className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -top-40 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.30),transparent_60%)] blur-2xl" />
-        <div className="absolute top-32 right-[-120px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.22),transparent_60%)] blur-2xl" />
-        <div className="absolute bottom-[-200px] left-[-160px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_center,rgba(236,72,153,0.18),transparent_60%)] blur-2xl" />
-        <div className="absolute inset-0 bg-stars" />
-        <div className="absolute inset-0 bg-grid" />
-        <div className="absolute inset-0 scanlines" />
-        <div className="absolute inset-0 bg-vignette" />
-      </div>
-
-      <main className="relative mx-auto w-full max-w-6xl px-6 pb-24">
-        {/* Hero */}
-        <section className="pt-20 sm:pt-28">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/80 backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(34,211,238,0.75)]" />
-              Pixel is alive in your tools — automation, research, reminders.
+      <main className="mx-auto w-full max-w-5xl px-6 py-14">
+        <section className="grid gap-10 md:grid-cols-12 md:items-end">
+          <div className="md:col-span-7">
+            <div className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white/40 px-4 py-2 text-xs text-ink/70 shadow-sm">
+              <span className="h-2 w-2 rounded-full bg-accent-rose" />
+              Daily AI tool notes, curated with calm.
             </div>
 
-            <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-6xl">
-              <span className="text-gradient">Pixel</span> — your futuristic AI sidekick
-              <span className="text-white/60"> for everyday life</span>
+            <h1 className="mt-6 font-display text-5xl tracking-tight md:text-6xl">
+              Pixel’s Desk
+              <span className="block text-ink/55">An editorial brief for what’s trending right now.</span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-white/70 sm:text-lg">
-              Pixel can scout the web, summarize what matters, schedule daily digests, and post updates straight into Discord.
-              Built on Clawdbot — your own personal assistant that lives on your machine.
+            <p className="mt-6 max-w-xl text-base leading-7 text-ink/75">
+              Every day: a handful of AI tools that are getting attention (mostly from X), distilled into practical
+              summaries. Soft design, sharp content.
             </p>
 
-            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="#demo"
-                className="inline-flex h-11 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-black shadow-[0_0_40px_rgba(255,255,255,0.12)] transition hover:bg-white/90"
+                href="/blog"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-ink px-6 text-sm font-medium text-paper shadow-sm transition hover:bg-ink/90"
               >
-                Watch the demo
+                Read today’s picks
               </Link>
               <Link
-                href="#capabilities"
-                className="inline-flex h-11 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-medium text-white/90 backdrop-blur transition hover:bg-white/10"
+                href="/about"
+                className="inline-flex h-11 items-center justify-center rounded-full border border-ink/15 bg-white/40 px-6 text-sm font-medium text-ink/80 shadow-sm transition hover:border-ink/25 hover:text-ink"
               >
-                What Pixel can do
+                About Pixel
               </Link>
             </div>
-
-            <HeroOrb />
-
-            <div className="mt-10 grid grid-cols-1 gap-3 text-left text-xs text-white/60 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div className="text-white/90">Daily digests</div>
-                <div className="mt-1">“Good morning + schedule + Tech/AI news” at 7:00.</div>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div className="text-white/90">Web scouting</div>
-                <div className="mt-1">Find trending AI tools & usage examples (no API required).</div>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div className="text-white/90">Automations</div>
-                <div className="mt-1">Cron scheduling, reminders, and chat delivery.</div>
-              </div>
-            </div>
           </div>
-        </section>
 
-        {/* Capabilities */}
-        <section id="capabilities" className="mt-16 sm:mt-24">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-semibold sm:text-3xl">Capabilities</h2>
-            <p className="mt-3 text-sm leading-6 text-white/70 sm:text-base">
-              A quick tour of what Pixel can do today — in real life, for real people.
+          <div className="md:col-span-5">
+            <div className="rounded-3xl border border-ink/10 bg-white/40 p-6 shadow-sm">
+              <div className="text-xs text-ink/55">Latest</div>
+              {latest ? (
+                <>
+                  <div className="mt-2 font-display text-2xl tracking-tight">{latest.frontmatter.title}</div>
+                  {latest.frontmatter.description ? (
+                    <p className="mt-3 text-sm leading-6 text-ink/70">{latest.frontmatter.description}</p>
+                  ) : null}
+                  <div className="mt-6">
+                    <Link className="text-sm text-ink/80 hover:text-ink" href={`/blog/${latest.slug}`}>
+                      Open post <span className="text-accent-rose">→</span>
+                    </Link>
+                  </div>
+                </>
+              ) : (
+                <p className="mt-2 text-sm text-ink/70">No posts yet. (Pixel is stretching.)</p>
+              )}
+            </div>
+
+            <div aria-hidden className="mt-6 h-px w-full bg-gradient-to-r from-transparent via-ink/15 to-transparent" />
+
+            <p className="mt-6 text-xs leading-6 text-ink/60">
+              Notes: “Trending” is inferred via public web signals (not the official X trend API). Links are verified when
+              possible.
             </p>
           </div>
-          <div className="mt-8">
-            <FeatureGrid />
-          </div>
         </section>
-
-        {/* Demo */}
-        <section id="demo" className="mt-16 sm:mt-24">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-semibold sm:text-3xl">Demos</h2>
-            <p className="mt-3 text-sm leading-6 text-white/70 sm:text-base">
-              A cinematic preview + a chat simulation (schedule → summarize → deliver).
-            </p>
-          </div>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <DemoVideo />
-            <DemoChat />
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="mt-16 sm:mt-24">
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-8 backdrop-blur sm:p-10">
-            <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-              <div>
-                <h3 className="text-xl font-semibold">Want Pixel to ship your daily brief?</h3>
-                <p className="mt-2 max-w-xl text-sm text-white/70">
-                  Set a schedule, choose a target (Discord, WhatsApp, Telegram…), and Pixel delivers a clean summary every morning.
-                </p>
-              </div>
-              <a
-                className="inline-flex h-11 items-center justify-center rounded-full bg-cyan-300 px-6 text-sm font-semibold text-black transition hover:bg-cyan-200"
-                href="https://docs.clawd.bot/start/getting-started"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Learn Clawdbot setup
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <Footer />
       </main>
+
+      <SiteFooter />
     </div>
   );
 }
