@@ -1,11 +1,13 @@
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import { ToolCard } from "@/components/mdx/tool-card";
 
 export async function renderMdx(source: string) {
-  // Keep this intentionally simple for now.
-  // If we later want custom components (callouts, cards, etc.), we can add them here.
   const { content } = await compileMDX({
     source,
+    components: {
+      ToolCard,
+    },
     options: {
       mdxOptions: {
         remarkPlugins: [remarkGfm],
