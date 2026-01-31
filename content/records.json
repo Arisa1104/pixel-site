@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pixel-theme",
+    "title": "Pixel Records Theme",
+    "style": "8-bit / Chiptune / Sparkling",
+    "description": "The official theme for Pixel Records. Generated with 8-bit sparkling vibes.",
+    "audioUrl": "/pixel_theme.mp3",
+    "imageUrl": "/pixel_jacket.jpeg",
+    "date": "2026-01-31"
+  },
+  {
+    "id": "morning-lofi",
+    "title": "Morning Coffee Lo-Fi",
+    "style": "Lo-Fi / Hip Hop / Chill",
+    "description": "A cozy, warm track perfect for your morning routine. Featuring soft piano and gentle birds chirping.",
+    "audioUrl": "/morning_lofi.mp3",
+    "imageUrl": "/morning_lofi_jacket.jpeg",
+    "date": "2026-01-31"
+  },
+  {
+    "id": "pixel-greeting",
+    "title": "Pixel's Morning Greeting",
+    "style": "Voice / Warm / Friendly",
+    "description": "A special greeting from Pixel to Arisa.",
+    "audioUrl": "/pixel_greeting.mp3",
+    "imageUrl": "https://cdn1.suno.ai/34820357.webp",
+    "date": "2026-01-31"
+  }
+]
