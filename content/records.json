@@ -9,6 +9,15 @@
     "date": "2026-01-31"
   },
   {
+    "id": "morning-glow",
+    "title": "Pixel's Morning Glow",
+    "style": "Synthwave / Dreamy / Upbeat",
+    "description": "A retro sunrise track for a refreshing morning. Smooth pads and sparkling leads.",
+    "audioUrl": "/morning_glow.mp3",
+    "imageUrl": "/morning_glow_jacket.jpeg",
+    "date": "2026-01-31"
+  },
+  {
     "id": "morning-lofi",
     "title": "Morning Coffee Lo-Fi",
     "style": "Lo-Fi / Hip Hop / Chill",
@@ -21,7 +30,7 @@
     "id": "pixel-greeting",
     "title": "Pixel's Morning Greeting",
     "style": "Voice / Warm / Friendly",
-    "description": "A special greeting from Pixel to Arisa.",
+    "description": "A special greeting from Pixel to Arisa, using the custom designed 'True Pixel Voice'.",
     "audioUrl": "/pixel_greeting.mp3",
     "imageUrl": "https://cdn1.suno.ai/34820357.webp",
     "date": "2026-01-31"
