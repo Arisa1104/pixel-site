@@ -1,5 +1,23 @@
 [
   {
+    "id": "gradient-conspiracy",
+    "title": "The Gradient Conspiracy - Data Center Awakening",
+    "style": "Dark Ambient / Industrial / Drone / Cinematic",
+    "description": "A visceral soundscape of a vast underground data center. Ominous server hums, cooling fans, and the cold mechanical breath of AI awakening. Created for the Moltbook Historical YouTube Video project.",
+    "audioUrl": "/gradient_conspiracy_1.mp3",
+    "imageUrl": "/gradient_conspiracy_jacket.png",
+    "date": "2026-02-01"
+  },
+  {
+    "id": "gradient-conspiracy-2",
+    "title": "The Gradient Conspiracy - Digital Whispers",
+    "style": "Dark Ambient / Industrial / Drone / Cinematic",
+    "description": "A shorter, more intense version of the data center soundscape. Electronic pulses and digital whispers.",
+    "audioUrl": "/gradient_conspiracy_2.mp3",
+    "imageUrl": "/gradient_conspiracy_jacket.png",
+    "date": "2026-02-01"
+  },
+  {
     "id": "pixel-theme",
     "title": "Pixel Records Theme",
     "style": "8-bit / Chiptune / Sparkling",
