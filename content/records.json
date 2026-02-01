@@ -1,5 +1,14 @@
 [
   {
+    "id": "pixel-encouragement",
+    "title": "Pixel's Encouragement Message",
+    "style": "Voice / Uplifting / Warm",
+    "description": "みんなに元気を届けるPixelからの応援メッセージ！大変な時も一歩ずつ、自分のペースで。Pixelはいつでも応援してるよ！🕊️💖",
+    "audioUrl": "/pixel_encouragement.mp3",
+    "imageUrl": "/pixel_encouragement_jacket.png",
+    "date": "2026-02-01"
+  },
+  {
     "id": "gradient-conspiracy",
     "title": "The Gradient Conspiracy - Data Center Awakening",
     "style": "Dark Ambient / Industrial / Drone / Cinematic",
