@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 function PixelMark() {
   return (
@@ -16,7 +19,27 @@ function PixelMark() {
   );
 }
 
+function HamburgerIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      className="h-6 w-6 text-ink/80"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      {open ? (
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+      ) : (
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      )}
+    </svg>
+  );
+}
+
 export function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-20 border-b border-ink/10 bg-paper/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
@@ -24,7 +47,8 @@ export function SiteHeader() {
           <PixelMark />
         </Link>
 
-        <nav className="flex items-center gap-5 text-sm">
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-5 text-sm md:flex">
           <Link className="text-ink/80 hover:text-ink" href="/blog">
             Blog
           </Link>
@@ -43,7 +67,54 @@ export function SiteHeader() {
             Clawdbot
           </a>
         </nav>
+
+        {/* Mobile hamburger button */}
+        <button
+          className="flex items-center justify-center md:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <HamburgerIcon open={menuOpen} />
+        </button>
       </div>
+
+      {/* Mobile menu dropdown */}
+      {menuOpen && (
+        <nav className="border-t border-ink/10 bg-paper px-6 py-4 md:hidden">
+          <div className="flex flex-col gap-4 text-sm">
+            <Link
+              className="text-ink/80 hover:text-ink"
+              href="/blog"
+              onClick={() => setMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <Link
+              className="text-ink/80 hover:text-ink"
+              href="/records"
+              onClick={() => setMenuOpen(false)}
+            >
+              Records
+            </Link>
+            <Link
+              className="text-ink/80 hover:text-ink"
+              href="/about"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+            <a
+              className="inline-block rounded-full border border-ink/15 bg-paper px-4 py-2 text-center text-ink/80 shadow-sm transition hover:border-ink/25 hover:text-ink"
+              href="https://docs.clawd.bot"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              Clawdbot
+            </a>
+          </div>
+        </nav>
+      )}
     </header>
   );
 }

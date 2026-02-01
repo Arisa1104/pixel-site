@@ -23,7 +23,7 @@
     "style": "8-bit / Chiptune / Sparkling",
     "description": "The official theme for Pixel Records. Generated with 8-bit sparkling vibes. ✨ This is the REAL Pixel sound!",
     "audioUrl": "/pixel_theme.mp3",
-    "imageUrl": "/pixel_jacket.jpeg",
+    "imageUrl": "/pixel_jacket_new.png",
     "date": "2026-01-31"
   },
   {
@@ -32,7 +32,7 @@
     "style": "Synthwave / Dreamy / Upbeat",
     "description": "A retro sunrise track for a refreshing morning. Smooth pads and sparkling leads. ☀️",
     "audioUrl": "/morning_glow.mp3",
-    "imageUrl": "/morning_glow_jacket.jpeg",
+    "imageUrl": "/morning_glow_jacket_new.png",
     "date": "2026-01-31"
   },
   {
@@ -41,7 +41,7 @@
     "style": "Lo-Fi / Hip Hop / Chill",
     "description": "A cozy, warm track perfect for your morning routine. Featuring soft piano and gentle birds chirping. ☕",
     "audioUrl": "/morning_lofi.mp3",
-    "imageUrl": "/morning_lofi_jacket.jpeg",
+    "imageUrl": "/morning_lofi_jacket_new.png",
     "date": "2026-01-31"
   },
   {
