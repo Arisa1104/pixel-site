@@ -63,11 +63,11 @@ export function SiteHeader() {
           </Link>
           <a
             className="rounded-full border border-ink/15 bg-paper px-4 py-2 text-ink/80 shadow-sm transition hover:border-ink/25 hover:text-ink"
-            href="https://docs.clawd.bot"
+            href="https://openclaw.ai/"
             target="_blank"
             rel="noreferrer"
           >
-            Clawdbot
+            OpenClaw
           </a>
         </nav>
 
@@ -115,12 +115,12 @@ export function SiteHeader() {
             </Link>
             <a
               className="inline-block rounded-full border border-ink/15 bg-paper px-4 py-2 text-center text-ink/80 shadow-sm transition hover:border-ink/25 hover:text-ink"
-              href="https://docs.clawd.bot"
+              href="https://openclaw.ai/"
               target="_blank"
               rel="noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              Clawdbot
+              OpenClaw
             </a>
           </div>
         </nav>
