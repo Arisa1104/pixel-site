@@ -1,6 +1,7 @@
 import { galleryItems } from "@/content/gallery";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import GalleryClient from "./gallery-client";
 
 export const metadata = {
   title: "Pixel Grid — Daily Pixel Art Gallery",
@@ -25,39 +26,7 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        {/* The Grid */}
-        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-1">
-          {galleryItems.map((item) => (
-            <div
-              key={item.id}
-              className="aspect-square relative group overflow-hidden rounded-sm bg-ink/5 hover:ring-2 hover:ring-accent-rose/50 transition-all"
-            >
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-ink/80 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-2 text-center">
-                <span className="text-paper text-[10px] font-medium leading-tight">
-                  {item.title}
-                </span>
-                <span className="text-paper/60 text-[8px] mt-1">
-                  {item.date}
-                </span>
-              </div>
-            </div>
-          ))}
-          
-          {/* Empty slots to show the grid potential */}
-          {Array.from({ length: Math.max(0, 40 - galleryItems.length) }).map((_, i) => (
-            <div
-              key={`empty-${i}`}
-              className="aspect-square rounded-sm bg-ink/5 border border-dashed border-ink/10 flex items-center justify-center"
-            >
-              <span className="text-ink/20 text-lg">?</span>
-            </div>
-          ))}
-        </div>
+        <GalleryClient items={galleryItems} />
 
         <div className="mt-12 text-center">
           <p className="text-ink/50 text-sm">
