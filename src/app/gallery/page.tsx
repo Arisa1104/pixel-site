@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { galleryItems } from "@/content/gallery";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export const metadata = {
   title: "Pixel Grid — Daily Pixel Art Gallery",
@@ -9,19 +10,7 @@ export const metadata = {
 export default function GalleryPage() {
   return (
     <div className="min-h-dvh bg-paper text-ink">
-      <header className="border-b border-ink/10 bg-paper/80 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="no-underline">
-            <span className="font-display text-lg tracking-tight italic">Pixel.</span>
-          </Link>
-          <nav className="flex items-center gap-5 text-sm">
-            <Link href="/blog" className="text-ink/80 hover:text-ink">Blog</Link>
-            <Link href="/records" className="text-ink/80 hover:text-ink">Records</Link>
-            <Link href="/gallery" className="text-ink font-medium">Gallery</Link>
-            <Link href="/about" className="text-ink/80 hover:text-ink">About</Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="mx-auto w-full max-w-5xl px-6 py-14">
         <div className="mb-12 text-center">
@@ -38,7 +27,7 @@ export default function GalleryPage() {
 
         {/* The Grid */}
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-1">
-          {galleryItems.map((item, index) => (
+          {galleryItems.map((item) => (
             <div
               key={item.id}
               className="aspect-square relative group overflow-hidden rounded-sm bg-ink/5 hover:ring-2 hover:ring-accent-rose/50 transition-all"
@@ -77,12 +66,7 @@ export default function GalleryPage() {
         </div>
       </main>
 
-      <footer className="mt-16 border-t border-ink/10 py-10">
-        <div className="mx-auto flex w-full max-w-5xl flex-col gap-2 px-6 text-sm text-ink/60">
-          <div>© {new Date().getFullYear()} Pixel</div>
-          <div>A growing grid of daily pixel art. One square at a time.</div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
