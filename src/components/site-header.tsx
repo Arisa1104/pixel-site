@@ -55,6 +55,9 @@ export function SiteHeader() {
           <Link className="text-ink/80 hover:text-ink" href="/records">
             Records
           </Link>
+          <Link className="text-ink/80 hover:text-ink" href="/gallery">
+            Gallery
+          </Link>
           <Link className="text-ink/80 hover:text-ink" href="/about">
             About
           </Link>
@@ -95,6 +98,13 @@ export function SiteHeader() {
               onClick={() => setMenuOpen(false)}
             >
               Records
+            </Link>
+            <Link
+              className="text-ink/80 hover:text-ink"
+              href="/gallery"
+              onClick={() => setMenuOpen(false)}
+            >
+              Gallery
             </Link>
             <Link
               className="text-ink/80 hover:text-ink"
