@@ -82,6 +82,21 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* Baban! Masterpiece Illustration */}
+        <section className="relative mt-24 overflow-hidden rounded-3xl border border-ink/10 bg-white/20 shadow-xl group">
+          <div className="absolute inset-0 z-10 bg-gradient-to-t from-ink/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+          <img 
+            src="/hero-masterpiece.png" 
+            alt="Pixel in the glass orb" 
+            className="w-full h-auto aspect-[16/9] object-cover transition-transform duration-1000 group-hover:scale-105"
+          />
+          <div className="absolute bottom-0 left-0 right-0 p-8 z-20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 font-sans">
+             <div className="text-[10px] tracking-[0.4em] uppercase text-paper/80 mb-2 font-bold">Featured Artwork</div>
+             <h2 className="text-paper text-3xl font-display tracking-tight leading-tight">Pixel's Core</h2>
+             <p className="text-paper/70 text-sm mt-3 max-w-lg">The mechanical heart of the assistant, dreaming in a loop of glowing data and synthwave melodies.</p>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
