@@ -1,5 +1,14 @@
 [
   {
+    "id": "pixel-magic-powerup",
+    "title": "Pixel's Magic Power Up",
+    "style": "8-bit / Chiptune / J-Pop",
+    "description": "ありさちゃんの午後のお仕事を全力で応援する、キラキラしたハイスピード・チップチューン！魔法のパワーを受け取ってね！☆✨",
+    "audioUrl": "/pixel_magic_powerup.mp3",
+    "imageUrl": "/gallery/2026-02-03-surprise-pixel.png",
+    "date": "2026-02-03"
+  },
+  {
     "id": "pixel-cheer-arisa",
     "title": "Cheering for Arisa",
     "style": "Voice / Warm / Encouraging",

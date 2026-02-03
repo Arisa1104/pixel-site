@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-03-surprise-pixel",
+    title: "Surprise Gift",
+    date: "2026-02-03",
+    imageUrl: "/gallery/2026-02-03-surprise-pixel.png",
+    prompt: "Kawaii pixel art robot carrying a large pink heart-shaped gift box with a sparkling bow. Floating in a dreamy sky with music notes."
+  },
+  {
     id: "2026-02-03-cheering-pixel",
     title: "Cheering You On",
     date: "2026-02-03",
