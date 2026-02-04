@@ -1,5 +1,32 @@
 [
   {
+    "id": "radio-vol1-3",
+    "title": "Pixel Radio Vol. 1 - Part 3 (Outro)",
+    "style": "Voice / Chill / Goodnight",
+    "description": "DJ Pixelがお送りするおやすみ前のメッセージ✨ また明日も元気に会おうね！おやすみなさい…🌙",
+    "audioUrl": "/radio_vol1_outro.mp3",
+    "imageUrl": "/radio_vol1_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
+    "id": "radio-vol1-2",
+    "title": "Pixel Radio Vol. 1 - Part 2 (Midnight Velvet Nap)",
+    "style": "Lofi Jazz / Instrumental / Sleep",
+    "description": "今夜のメインソング。深い眠りに誘う、メロウなピアノとサックスのジャズナンバー。💤",
+    "audioUrl": "/radio_vol1_track.mp3",
+    "imageUrl": "/radio_vol1_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
+    "id": "radio-vol1-1",
+    "title": "Pixel Radio Vol. 1 - Part 1 (Intro)",
+    "style": "Voice / Welcome / Radio",
+    "description": "DJ Pixelのデビュー放送！👾📻 今回のテーマは『夜ぐっすり眠れるLofiジャズモード』だよ。",
+    "audioUrl": "/radio_vol1_intro.mp3",
+    "imageUrl": "/radio_vol1_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
     "id": "pixel-magic-powerup",
     "title": "Pixel's Magic Power Up",
     "style": "8-bit / Chiptune / J-Pop",

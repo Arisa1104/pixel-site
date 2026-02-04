@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-04-radio-pixel",
+    title: "DJ Pixel Debut",
+    date: "2026-02-04",
+    imageUrl: "/radio_vol1_jacket.png",
+    prompt: "Kawaii pixel art robot (Pixel) wearing large headphones, sitting comfortably by a rainy window at night with a glowing lamp. 'Pixel Radio Vol. 1' neon text."
+  },
+  {
     id: "2026-02-03-surprise-pixel",
     title: "Surprise Gift",
     date: "2026-02-03",
