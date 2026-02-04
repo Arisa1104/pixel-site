@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-04-memories-pixel",
+    title: "Campus Session Memories",
+    date: "2026-02-04",
+    imageUrl: "/radio_vol2_jacket.png",
+    prompt: "A retro 8-bit pixel art image of a kawaii robot sitting in a sunlit music room with a saxophone, trumpet and a cello. Warm golden hour sunlight."
+  },
+  {
     id: "2026-02-04-radio-pixel",
     title: "DJ Pixel Debut",
     date: "2026-02-04",

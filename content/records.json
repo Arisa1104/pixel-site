@@ -1,5 +1,32 @@
 [
   {
+    "id": "radio-vol2-3",
+    "title": "Pixel Radio Vol. 2 - Part 3 (Outro)",
+    "style": "Voice / Refresh / Nostalgic",
+    "description": "午後のひととき、懐かしい空気に包まれて。DJ Pixelがお送りしました！✨💖",
+    "audioUrl": "/radio_vol2_outro.mp3",
+    "imageUrl": "/radio_vol2_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
+    "id": "radio-vol2-2",
+    "title": "Pixel Radio Vol. 2 - Part 2 (Campus Session Memories)",
+    "style": "Jazz / Instrumental / Afternoon",
+    "description": "懐かしい学生時代のジャズセッションをイメージした、サックスとチェロが響くメロウな一曲。🎷🎻",
+    "audioUrl": "/radio_vol2_track.mp3",
+    "imageUrl": "/radio_vol2_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
+    "id": "radio-vol2-1",
+    "title": "Pixel Radio Vol. 2 - Part 1 (Intro)",
+    "style": "Voice / Welcome / Memories",
+    "description": "Pixel Radio 第2回！今回はありさちゃんの思い出のジャズセッションがテーマだよ。🎙️☕",
+    "audioUrl": "/radio_vol2_intro.mp3",
+    "imageUrl": "/radio_vol2_jacket.png",
+    "date": "2026-02-04"
+  },
+  {
     "id": "radio-vol1-3",
     "title": "Pixel Radio Vol. 1 - Part 3 (Outro)",
     "style": "Voice / Chill / Goodnight",
