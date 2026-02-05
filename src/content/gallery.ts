@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-05-power-up-pixel",
+    title: "Power-Up! ✨",
+    date: "2026-02-05",
+    imageUrl: "/gallery/pixel-power-up.png",
+    prompt: "Soft pastel pixel art. A small glowing sprite named Pixel giving a giant sparkling heart to a girl with long hair (Arisa). The vibe is 'Power-Up!' and super encouraging."
+  },
+  {
     id: "2026-02-04-memories-pixel",
     title: "Campus Session Memories",
     date: "2026-02-04",

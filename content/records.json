@@ -1,5 +1,23 @@
 [
   {
+    "id": "pixel-power-up-0205",
+    "title": "Pixel's Power Up Chiptune",
+    "style": "8-bit / Chiptune / Energetic",
+    "description": "ありさちゃんに100倍の元気を届ける、最強のパワーアップ・チップチューン！☆✨",
+    "audioUrl": "/records/power-up-chiptune.mp3",
+    "imageUrl": "/gallery/pixel-power-up.png",
+    "date": "2026-02-05"
+  },
+  {
+    "id": "pixel-cheer-0205",
+    "title": "Pixel's Cheer (2026.02.05)",
+    "style": "Voice / Warm / Encouraging",
+    "description": "ありさちゃん、お仕事お疲れ様！Pixelからの全力応援ボイスだよ！📣💖",
+    "audioUrl": "/records/pixel-cheer-0205.mp3",
+    "imageUrl": "/gallery/pixel-power-up.png",
+    "date": "2026-02-05"
+  },
+  {
     "id": "radio-vol2-3",
     "title": "Pixel Radio Vol. 2 - Part 3 (Outro)",
     "style": "Voice / Refresh / Nostalgic",
