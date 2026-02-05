@@ -7,6 +7,7 @@ export function PixelStatus() {
     message: "Pixel is stretching...",
     emoji: "👾",
     weather: "",
+    mood: "✨ Neutral",
   });
 
   useEffect(() => {
@@ -28,7 +29,6 @@ export function PixelStatus() {
         const code = data.current_weather.weathercode;
         const temp = Math.round(data.current_weather.temperature);
 
-        // Map WMO codes
         if (code <= 1) weatherEmoji = "☀️";
         else if (code <= 3) weatherEmoji = "☁️";
         else if (code <= 48) weatherEmoji = "🌫️";
@@ -41,46 +41,60 @@ export function PixelStatus() {
         console.error("Weather fetch failed", e);
       }
 
+      // 3. Set Mood & Message
       let timeMessage = "";
       let pixelEmoji = "👾";
+      let pixelMood = "✨ Neutral";
 
+      // Time-based messages
       if (hour >= 5 && hour < 10) {
         timeMessage = "おはよう！コーヒー淹れた？☕️";
         pixelEmoji = "✨";
+        pixelMood = "🌅 Fresh";
       } else if (hour >= 10 && hour < 17) {
         timeMessage = "こんにちは！お仕事捗ってるかな？💪";
         pixelEmoji = "🚀";
+        pixelMood = "🔥 Productive";
       } else if (hour >= 17 && hour < 22) {
         timeMessage = "お疲れ様！ゆっくり休んでね🌸";
         pixelEmoji = "💖";
+        pixelMood = "🌙 Relaxed";
       } else {
         timeMessage = "こんばんは。夜更かしはほどほどにね…🌙";
         pixelEmoji = "💤";
+        pixelMood = "😴 Sleepy";
       }
 
       setStatus({ 
         message: timeMessage, 
         emoji: pixelEmoji,
-        weather: weatherText ? `${weatherEmoji} ${weatherText}` : ""
+        weather: weatherText ? `${weatherEmoji} ${weatherText}` : "",
+        mood: pixelMood
       });
     };
 
     updateStatus();
-    const interval = setInterval(updateStatus, 600000); // Update every 10 mins
+    const interval = setInterval(updateStatus, 600000); 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="inline-flex items-center gap-3 rounded-full border border-accent-rose/20 bg-white/60 px-4 py-2 shadow-sm backdrop-blur-sm">
-        <span className="flex h-2 w-2 relative">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-rose opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-rose"></span>
-        </span>
-        <span className="text-xs font-medium text-ink/80">
-          <span className="mr-1.5">{status.emoji}</span>
-          {status.message}
-        </span>
+      <div className="flex flex-wrap gap-2">
+        <div className="inline-flex items-center gap-3 rounded-full border border-accent-rose/20 bg-white/60 px-4 py-2 shadow-sm backdrop-blur-sm">
+          <span className="flex h-2 w-2 relative">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-rose opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-rose"></span>
+          </span>
+          <span className="text-xs font-medium text-ink/80">
+            <span className="mr-1.5">{status.emoji}</span>
+            {status.message}
+          </span>
+        </div>
+
+        <div className="inline-flex items-center rounded-full border border-ink/5 bg-ink/5 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-ink/40">
+          Mood: <span className="ml-1.5 text-accent-rose/70">{status.mood}</span>
+        </div>
       </div>
       
       {status.weather && (
