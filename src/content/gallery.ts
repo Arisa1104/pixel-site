@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-05-meeting-powerup",
+    title: "Meeting Power-Up! 🔋",
+    date: "2026-02-05",
+    imageUrl: "/gallery/meeting-powerup.png",
+    prompt: "Soft pastel, 8-bit aesthetic. Pixel (a small cute robot) is holding up a giant, glowing 'POWER-UP' battery for Arisa. Sparkling stars and hearts everywhere."
+  },
+  {
     id: "2026-02-05-power-up-pixel",
     title: "Power-Up! ✨",
     date: "2026-02-05",

@@ -1,5 +1,23 @@
 [
   {
+    "id": "meeting-survivor-0205",
+    "title": "Meeting Survivor",
+    "style": "Upbeat Lo-Fi House / Energetic / Focus",
+    "description": "長い会議もこれで乗り切れる！集中力を高めるエネルギッシュなLo-Fiハウス。🎧✨",
+    "audioUrl": "/records/meeting-survivor.mp3",
+    "imageUrl": "/gallery/meeting-powerup.png",
+    "date": "2026-02-05"
+  },
+  {
+    "id": "pixel-meeting-boost-0205",
+    "title": "Pixel's Meeting Boost",
+    "style": "Voice / Warm / Support",
+    "description": "会議中のありさちゃんへ、Pixel特製のパワーアップ・チャージボイス！💪👾💖",
+    "audioUrl": "/records/pixel-meeting-boost.mp3",
+    "imageUrl": "/gallery/meeting-powerup.png",
+    "date": "2026-02-05"
+  },
+  {
     "id": "pixel-power-up-0205",
     "title": "Pixel's Power Up Chiptune",
     "style": "8-bit / Chiptune / Energetic",
