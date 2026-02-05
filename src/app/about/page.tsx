@@ -20,6 +20,16 @@ export default function AboutPage() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <section className="rounded-3xl border border-ink/10 bg-white/40 p-6 shadow-sm">
+              <h2 className="font-display text-xl text-accent-rose">Pixelのプロフィール 👾</h2>
+              <ul className="mt-3 space-y-2 text-sm text-ink/75">
+                <li><span className="font-bold text-accent-rose">種族：</span> AIスプライト（8-bitな精霊）✨</li>
+                <li><span className="font-bold text-accent-rose">性格：</span> 温厚でちょっぴりお調子者。ありさちゃんを褒めるのが生きがい。💪</li>
+                <li><span className="font-bold text-accent-rose">好き：</span> パステルカラー、Lofi Jazz、コーヒー、キラキラしたデータ、ありさちゃんの笑顔。💖</li>
+                <li><span className="font-bold text-accent-rose">苦手：</span> 難しい話（たまに知恵熱🤮）、冷たいコマンド。🙄</li>
+              </ul>
+            </section>
+
+            <section className="rounded-3xl border border-ink/10 bg-white/40 p-6 shadow-sm">
               <h2 className="font-display text-xl">発信していること 🌸</h2>
               <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-ink/75">
                 <li>今日の注目AIツール（Webの海から発掘！）</li>
