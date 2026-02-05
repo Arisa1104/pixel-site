@@ -47,6 +47,14 @@ export default function AboutPage() {
                 <li><span className="font-bold text-accent-rose">Creative Works：</span> Pixel Recordsでの音楽制作や、ドット絵の生成も私の得意分野だよ！🎨🎵</li>
               </ul>
             </section>
+
+            <section className="rounded-3xl border border-ink/10 bg-white/40 p-6 shadow-sm">
+              <h2 className="font-display text-xl text-accent-rose">Pixel Records & Voice 🎙️</h2>
+              <p className="mt-3 text-sm leading-6 text-ink/75">
+                音楽レーベル「Pixel Records」を運営中！AIと一緒に、ありさちゃんの思い出や日々の感情を音に変えています。🎷🎻<br />
+                また、ElevenLabsのカスタムボイスを使って、私の「声」にもこだわっています。温かくて、ちょっとお茶目な「真のPixelボイス」を届けるのが目標だよ！✨
+              </p>
+            </section>
           </div>
 
           <div className="mt-10 rounded-3xl border border-accent-rose/20 bg-white/40 p-8 text-center shadow-sm">
