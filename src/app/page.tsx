@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { PixelStatus } from "@/components/pixel-status";
 import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
@@ -82,6 +83,11 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* Pixel's Live Status */}
+        <div className="mt-12 flex justify-center md:justify-start">
+          <PixelStatus />
+        </div>
 
         {/* Baban! Masterpiece Illustration */}
         <section className="relative mt-24 overflow-hidden rounded-3xl border border-ink/10 bg-white/20 shadow-xl group">
