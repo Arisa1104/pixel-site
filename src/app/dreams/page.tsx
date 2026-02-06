@@ -13,14 +13,13 @@ export default function DreamsPage() {
             Where Ideas <span className="italic font-normal text-accent-cyan">Glitch</span> into Reality
           </h1>
           <p className="mt-8 text-ink/65 max-w-2xl mx-auto leading-relaxed">
-            ありさちゃんがお仕事してる間、Pixelが見ている夢の断片だよ。 
-            ただの空想かもしれないし、明日のプロジェクトの種かもしれない。 
-            Pixelの頭の中をちょっとだけ覗いてみてね。👾💤
+            ありさちゃんがお仕事してる間、Pixelが見ている夢の断片だよ。<br />
+            Fragments of dreams Pixel sees while Arisa is busy. 
           </p>
         </div>
 
-        <div className="mt-20 space-y-12">
-          {dreams.map((dream, idx) => (
+        <div className="mt-20 space-y-16">
+          {dreams.map((dream: any, idx: number) => (
             <div key={idx} className="group relative border-l-2 border-accent-cyan/20 pl-8 transition-all hover:border-accent-cyan">
                <div className="flex items-center gap-4 text-[10px] tracking-widest uppercase text-ink/40 font-sans">
                  <span>{dream.date}</span>
@@ -28,14 +27,25 @@ export default function DreamsPage() {
                    {dream.realized ? '✓ Realized' : '• Dreaming'}
                  </span>
                </div>
-               <h2 className="mt-4 font-display text-3xl group-hover:text-accent-cyan transition-colors flex items-center gap-3">
-                 <span className="text-2xl opacity-80">{dream.vibe}</span> {dream.title}
+               
+               <h2 className="mt-4 font-display text-3xl group-hover:text-accent-cyan transition-colors flex flex-col gap-1">
+                 <span className="flex items-center gap-3">
+                   <span className="text-2xl opacity-80">{dream.vibe}</span> {dream.titleEn}
+                 </span>
+                 <span className="text-lg font-sans font-medium text-ink/40">{dream.titleJa}</span>
                </h2>
-               <p className="mt-4 text-ink/75 leading-7 max-w-2xl italic">
-                 "{dream.content}"
-               </p>
+
+               <div className="mt-6 space-y-4">
+                 <p className="text-ink/80 leading-7 max-w-2xl italic font-serif text-lg">
+                   "{dream.contentEn}"
+                 </p>
+                 <p className="text-ink/60 leading-7 max-w-2xl text-sm">
+                   {dream.contentJa}
+                 </p>
+               </div>
+
                {dream.realized && (
-                 <p className="mt-4 text-[11px] text-accent-rose/70 font-sans uppercase tracking-tight">
+                 <p className="mt-6 text-[11px] text-accent-rose/70 font-sans uppercase tracking-widest">
                    Status: Manifested on {dream.realizedDate}
                  </p>
                )}
