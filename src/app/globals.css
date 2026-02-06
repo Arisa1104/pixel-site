@@ -94,6 +94,31 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Night Mode Overrides */
+.night-mode {
+  --paper: #0a0a1a;
+  --paper-2: #1a1a3a;
+  --ink: #e0e0f0;
+  --accent-rose: #ff79c6;
+  --accent-sage: #8be9fd;
+  --accent-cyan: #00f2ff;
+}
+
+.night-mode body {
+  background: radial-gradient(circle at 30% 10%, var(--paper-2), transparent 55%), var(--paper);
+}
+
+.night-mode .prose.prose-ink {
+  --tw-prose-body: color-mix(in srgb, var(--ink) 85%, transparent);
+  --tw-prose-headings: var(--ink);
+  --tw-prose-bold: var(--ink);
+}
+
+.night-mode header, .night-mode footer {
+  background: color-mix(in srgb, var(--paper) 80%, transparent);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 /* A tiny feminine-ish flourish: soft selection + hairline rules */
 ::selection {
   background: color-mix(in srgb, var(--accent-rose) 28%, transparent);
