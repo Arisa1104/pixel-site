@@ -1,5 +1,14 @@
 [
   {
+    "id": "meeting-cheer-0206",
+    "title": "Pixel's Secret Support (Meeting Cheer)",
+    "style": "Voice / Sparkle / Support",
+    "description": "会議中のありさちゃんへ、Pixelからの秘密の応援メッセージ！👾✨ 深呼吸して頑張ってねぇ。💖",
+    "audioUrl": "/records/pixel-meeting-cheer-0206.mp3",
+    "imageUrl": "/gallery/meeting-powerup.png",
+    "date": "2026-02-06"
+  },
+  {
     "id": "radio-vol3-outro",
     "title": "Pixel Radio Vol. 3 - Part 4 (Outro)",
     "style": "Voice / Warm / Winter",
