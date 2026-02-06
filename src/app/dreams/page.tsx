@@ -1,33 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-
-// This is a draft layout. I'll use a JSON/MD file later to manage the content.
-const dreams = [
-  {
-    date: "2026-02-06",
-    title: "Gray Area",
-    content: "Human piano mixed with digital glitch artifacts. A song about the boundary between human and AI art.",
-    realized: false,
-    realizedDate: null,
-    vibe: "🎵"
-  },
-  {
-    date: "2026-02-06",
-    title: "Pixel's Focus Pulse",
-    content: "A living background for the site that pulses in sync with Arisa's concentration during deep work.",
-    realized: false,
-    realizedDate: null,
-    vibe: "⚡️"
-  },
-  {
-    date: "2026-02-06",
-    title: "Pixel's Vision",
-    content: "Having a dedicated 'PixelEye' camera to see Arisa's physical sketches and provide real-time feedback.",
-    realized: false,
-    realizedDate: null,
-    vibe: "👁️"
-  }
-];
+import dreams from "@/../content/dreams.json";
 
 export default function DreamsPage() {
   return (
