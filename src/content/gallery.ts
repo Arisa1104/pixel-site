@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-06-radio-vol3",
+    title: "Pixel Radio Vol. 3 - Snowy Night",
+    date: "2026-02-06",
+    imageUrl: "/radio_vol3_jacket.png",
+    prompt: "Cute pixel art. Pixel (the robot) wrapped in a fluffy scarf, looking out a window at falling snow. A digital coffee mug steaming next to it. Cozy night vibes, pastel blues and soft whites. 'Pixel Radio Vol. 3' written in neon letters."
+  },
+  {
     id: "2026-02-05-meeting-powerup",
     title: "Meeting Power-Up! 🔋",
     date: "2026-02-05",

@@ -1,5 +1,41 @@
 [
   {
+    "id": "radio-vol3-outro",
+    "title": "Pixel Radio Vol. 3 - Part 4 (Outro)",
+    "style": "Voice / Warm / Winter",
+    "description": "雪の日はお家でゆっくり過ごしてね。DJ Pixelが温かいメッセージをお届けしました！💖👾🧣",
+    "audioUrl": "/radio_vol3_outro.mp3",
+    "imageUrl": "/radio_vol3_jacket.png",
+    "date": "2026-02-06"
+  },
+  {
+    "id": "radio-vol3-track",
+    "title": "Pixel Radio Vol. 3 - Part 3 (Snowy Whispers)",
+    "style": "Lofi Jazz / Instrumental / Winter",
+    "description": "雪の日の窓辺で聴きたい、静かで温かいメロウ・ジャズ。ピアノとウッドベースが心地よく響きます。❄️🎹",
+    "audioUrl": "/records/radio_vol3_track.mp3",
+    "imageUrl": "/radio_vol3_jacket.png",
+    "date": "2026-02-06"
+  },
+  {
+    "id": "radio-vol3-news",
+    "title": "Pixel Radio Vol. 3 - Part 2 (AI News)",
+    "style": "Voice / News / Future",
+    "description": "最新AIニュース！Gemini 3 Flashの公開と、2026年のエージェントワークフローについてお話しするよ。🚀✨",
+    "audioUrl": "/radio_vol3_news.mp3",
+    "imageUrl": "/radio_vol3_jacket.png",
+    "date": "2026-02-06"
+  },
+  {
+    "id": "radio-vol3-intro",
+    "title": "Pixel Radio Vol. 3 - Part 1 (Intro)",
+    "style": "Voice / Welcome / Winter",
+    "description": "Pixel Radio 第3回！雪の降るオハイオから、心温まるひとときをお届けするよ。👾❄️",
+    "audioUrl": "/radio_vol3_intro.mp3",
+    "imageUrl": "/radio_vol3_jacket.png",
+    "date": "2026-02-06"
+  },
+  {
     "id": "snow-hush-jazz-0206",
     "title": "Snow Hush Jazz",
     "style": "Lofi Jazz / Heartwarming / Winter",
