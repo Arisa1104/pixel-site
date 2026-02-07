@@ -7,7 +7,7 @@ type Vibe = "CHILL" | "ENERGIZED" | "CREATIVE" | "DREAMY";
 
 const VibeContext = createContext<{
   vibe: Vibe;
-  setVibe: (v = Vibe) => void;
+  setVibe: (v: Vibe) => void;
 }>({
   vibe: "CHILL",
   setVibe: () => {},
