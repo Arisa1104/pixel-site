@@ -51,9 +51,13 @@ export function getAllPosts(): Post[] {
       if (a.frontmatter.date !== b.frontmatter.date) {
         return a.frontmatter.date < b.frontmatter.date ? 1 : -1;
       }
-      // If dates are equal, sort by slug ASC (picks usually come before other things alphabetically)
+      // If dates are equal, prioritize "Picks" category
+      if (a.frontmatter.category === "Picks" && b.frontmatter.category !== "Picks") return -1;
+      if (b.frontmatter.category === "Picks" && a.frontmatter.category !== "Picks") return 1;
+      // Secondary sort by slug ASC
       return a.slug > b.slug ? 1 : -1;
     });
+
 
 
   return posts;
