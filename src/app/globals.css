@@ -119,6 +119,38 @@ body {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Vibe Manager Styles */
+.vibe-energized {
+  --accent-rose: #ff4d94;
+  --accent-cyan: #00ffff;
+  transition: all 1s ease;
+}
+
+.vibe-dreamy {
+  --paper: #0a0a1a;
+  --ink: #d1d1f0;
+  --accent-rose: #bd93f9;
+  --accent-cyan: #8be9fd;
+  transition: all 2s ease-in-out;
+}
+
+.vibe-creative {
+  --accent-rose: #f1fa8c;
+  --accent-sage: #50fa7b;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vibe-chill {
+  --paper: #fbf7f0;
+  --accent-rose: #c58aa7;
+  transition: all 1s ease;
+}
+
+.vibe-container {
+  min-height: 100vh;
+  transition: background-color 1s ease, color 1s ease;
+}
+
 /* A tiny feminine-ish flourish: soft selection + hairline rules */
 ::selection {
   background: color-mix(in srgb, var(--accent-rose) 28%, transparent);

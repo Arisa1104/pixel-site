@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Noto_Sans_JP, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { VibeProvider } from "@/components/vibe-provider";
 
 const editorialSerif = Playfair_Display({
   variable: "--font-editorial-serif",
@@ -55,7 +56,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${editorialSerif.variable} ${editorialSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider>
-          {children}
+          <VibeProvider>
+            {children}
+          </VibeProvider>
         </ThemeProvider>
       </body>
     </html>
