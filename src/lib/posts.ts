@@ -47,7 +47,14 @@ export function getAllPosts(): Post[] {
 
       return { slug, frontmatter, content } satisfies Post;
     })
-    .sort((a, b) => (a.frontmatter.date < b.frontmatter.date ? 1 : -1));
+    .sort((a, b) => {
+      if (a.frontmatter.date !== b.frontmatter.date) {
+        return a.frontmatter.date < b.frontmatter.date ? 1 : -1;
+      }
+      // If dates are equal, sort by slug ASC (picks usually come before other things alphabetically)
+      return a.slug > b.slug ? 1 : -1;
+    });
+
 
   return posts;
 }
