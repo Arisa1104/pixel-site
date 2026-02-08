@@ -30,7 +30,7 @@ export function ToolCard({
   children: ReactNode;
 }) {
   return (
-    <section className="my-6 rounded-2xl border border-ink/10 bg-white/40 p-6 shadow-sm">
+    <section className="my-6 rounded-2xl border border-ink/10 bg-ink/5 p-6 shadow-sm backdrop-blur-sm">
       <header className="flex flex-col gap-3">
         <div className="flex items-start justify-between gap-4">
           <h3 className="m-0 font-display text-xl tracking-tight text-ink">{title}</h3>
@@ -39,7 +39,7 @@ export function ToolCard({
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="font-sans text-xs tracking-widest uppercase text-accent-rose hover:text-ink"
+              className="font-sans text-xs tracking-widest uppercase text-accent-rose hover:text-ink transition-colors"
             >
               Open →
             </a>
@@ -55,19 +55,19 @@ export function ToolCard({
             ) : null}
 
             {typeof importance === "number" ? (
-              <span className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-paper px-3 py-1">
+              <span className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ink/5 px-3 py-1">
                 <span className="font-sans text-[10px] tracking-[0.18em] uppercase text-ink/60">Importance</span>
                 <Dots value={importance} />
               </span>
             ) : null}
 
             {uses?.length ? (
-              <span className="inline-flex flex-wrap items-center gap-1.5 rounded-full border border-ink/10 bg-paper px-3 py-1">
+              <span className="inline-flex flex-wrap items-center gap-1.5 rounded-full border border-ink/10 bg-ink/5 px-3 py-1">
                 <span className="font-sans text-[10px] tracking-[0.18em] uppercase text-ink/60">Use</span>
                 {uses.map((u) => (
                   <span
                     key={u}
-                    className="rounded-full bg-white/60 px-2 py-0.5 font-sans text-[11px] text-ink/70"
+                    className="rounded-full bg-ink/10 px-2 py-0.5 font-sans text-[11px] text-ink/70"
                   >
                     {u}
                   </span>

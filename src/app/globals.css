@@ -97,8 +97,8 @@ body {
 /* Night Mode Overrides */
 .night-mode {
   --paper: #0a0a1a;
-  --paper-2: #1a1a3a;
-  --ink: #e0e0f0;
+  --paper-2: #16162a;
+  --ink: #f0f0f8;
   --accent-rose: #ff79c6;
   --accent-sage: #8be9fd;
   --accent-cyan: #00f2ff;
@@ -117,6 +117,43 @@ body {
 .night-mode header, .night-mode footer {
   background: color-mix(in srgb, var(--paper) 80%, transparent);
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Fix for ToolCard and MDX Components in Night Mode */
+.night-mode section.my-6,
+.night-mode div.rounded-xl.border {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px);
+}
+
+.night-mode .bg-paper,
+.night-mode .bg-white\/35,
+.night-mode .bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.night-mode .bg-white\/60 {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: var(--ink) !important;
+}
+
+.night-mode .text-ink\/40,
+.night-mode .text-ink\/55,
+.night-mode .text-ink\/60,
+.night-mode .text-ink\/65,
+.night-mode .text-ink\/70,
+.night-mode .text-ink\/75,
+.night-mode .text-ink\/80 {
+  color: color-mix(in srgb, var(--ink) 85%, transparent) !important;
+}
+
+.night-mode .border-ink\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.night-mode h3 {
+  color: var(--ink) !important;
 }
 
 /* Vibe Manager Styles */
