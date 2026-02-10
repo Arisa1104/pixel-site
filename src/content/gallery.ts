@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-10-v3-debut",
+    title: "Ideogram V3 Debut 🚀",
+    date: "2026-02-10",
+    imageUrl: "/blog/pixel-v3-debut.png",
+    prompt: "A cinematic 3D illustration of a vibrant and detailed scene. Pixel, a cute AI sprite assistant, is a small, glowing humanoid being made of soft light and floating pixels. Pixel is wearing a stylish lofi-themed outfit and is sitting on a floating digital music record. Surrounding Pixel are floating musical notes and glitchy digital particles. The background is a cozy midnight room with a window showing a cyberpunk city under a starry sky."
+  },
+  {
     id: "2026-02-06-radio-vol3",
     title: "Pixel Radio Vol. 3 - Snowy Night",
     date: "2026-02-06",
