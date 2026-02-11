@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "sync:dreams": "mkdir -p content/dreams-md && cp ../memory/dreams/*.md content/dreams-md/",
+    "build": "npm run sync:dreams && next build",
     "start": "next start",
     "lint": "eslint",
     "render:trailer": "node scripts/render-trailer.mjs"
