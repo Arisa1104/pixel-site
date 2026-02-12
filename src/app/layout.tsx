@@ -3,6 +3,7 @@ import { Geist_Mono, Noto_Sans_JP, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { VibeProvider } from "@/components/vibe-provider";
+import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 
 const editorialSerif = Playfair_Display({
   variable: "--font-editorial-serif",
@@ -55,11 +56,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${editorialSerif.variable} ${editorialSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>
-          <VibeProvider>
-            {children}
-          </VibeProvider>
-        </ThemeProvider>
+        <ConvexClientProvider>
+          <ThemeProvider>
+            <VibeProvider>
+              {children}
+            </VibeProvider>
+          </ThemeProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   );
