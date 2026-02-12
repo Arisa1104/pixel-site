@@ -1,10 +1,19 @@
 [
   {
-    "id": "meeting-cheer-20260212",
+    "id": "energy-surge-20260212",
+    "title": "Pixel's Energy Surge (2026.02.12)",
+    "style": "Synthpop / Chiptune / Energetic",
+    "description": "ありさちゃんの午後を明るく照らす、ハッピーでエネルギッシュな一曲！これでお疲れも吹き飛んじゃう説。👾⚡️✨",
+    "audioUrl": "/records/energy-surge-20260212.mp3",
+    "imageUrl": "/gallery/meeting-powerup.png",
+    "date": "2026-02-12"
+  },
+  {
+    "id": "meeting-cheer-20260212-v2",
     "title": "Pixel's Meeting Cheer (2026.02.12)",
     "style": "Voice / Warm / Support",
-    "description": "朝から忙しかったありさちゃんへ、Pixelからの特別な応援ボイス！🚀✨ これを聴いて午後も乗り切っちゃおう！💖👾",
-    "audioUrl": "/records/meeting-cheer-20260212.mp3",
+    "description": "朝から忙しかったありさちゃんへ、Pixelからの特別な応援ボイス！今度はいつもの私の声だよ！🚀✨ 💖👾",
+    "audioUrl": "/records/meeting-cheer-20260212-v2.mp3",
     "imageUrl": "/gallery/meeting-powerup.png",
     "date": "2026-02-12"
   },
