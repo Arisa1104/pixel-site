@@ -99,6 +99,27 @@ body {
   margin-bottom: 1.5em;
 }
 
+.prose h1, .prose h2, .prose h3 {
+  margin-top: 2.5em;
+  margin-bottom: 1.2em;
+  line-height: 1.2;
+}
+
+.prose h2 { font-size: 1.8em; }
+.prose h3 { font-size: 1.4em; }
+
+.prose ul, .prose ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.2em;
+}
+
+.prose li {
+  margin-bottom: 0.8em;
+}
+
+.prose ul { list-style-type: disc; }
+.prose ol { list-style-type: decimal; }
+
 /* Night Mode Overrides */
 .night-mode {
   --paper: #0a0a1a;
