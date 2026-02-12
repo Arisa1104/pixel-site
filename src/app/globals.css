@@ -117,6 +117,12 @@ body {
   margin-bottom: 0.8em;
 }
 
+/* Give emoji-led paragraphs a bit more presence */
+.prose p:has(> span:first-child), 
+.prose p:first-letter:where([data-emoji]) {
+  margin-top: 1.2em;
+}
+
 .prose ul { list-style-type: disc; }
 .prose ol { list-style-type: decimal; }
 
