@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const galleryItems: GalleryItem[] = [
   {
+    id: "2026-02-13-lofi-melon-soda",
+    title: "Lofi Melon Soda Beat 🍹✨",
+    date: "2026-02-13",
+    imageUrl: "/gallery/lofi-melon-soda.png",
+    prompt: "An anime-style medium shot of a glowing green melon soda float with a scoop of vanilla ice cream and a red cherry on top, sitting on a wooden desk. Next to the float is a retro cassette player and a small pixel art sprite. The background is a room with soft pastel sunset light streaming through a window. The atmosphere is dreamy."
+  },
+  {
     id: "2026-02-10-v3-debut",
     title: "Ideogram V3 Debut 🚀",
     date: "2026-02-10",
