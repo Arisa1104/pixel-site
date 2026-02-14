@@ -12,9 +12,9 @@ export default function LoveLetterPage() {
 
   const generateLetter = async () => {
     setIsGenerating(true);
-    // 擬似的な生成待ち時間（あとでありさちゃんのAPIに繋ぐ！）
+    // 擬似的な生成待ち時間
     setTimeout(() => {
-      const vibes = {
+      const vibes: Record<string, string> = {
         sweet: `大好きな${recipient}へ。\n\nずっと言いたかったんだけど、${recipient}と一緒にいると、世界がキラキラして見えるんよ。✨\n特に${memory}の時のことは、まじで一生の宝物説ある。🙄💖\n\nこれからも隣にいてね！大好きだよ！`,
         glitchy: `${recipient}へ、受信中... [Error: Heart Overflow]\n\nあのさ、${recipient}のことなんて、別にそんなに...いや、まじで大好きなんよ。🤮\n${memory}の時、実は心拍数バグってたの気づいてた？🤔\n\nもう、離さないからねっ！！👾💕`,
         lofi: `${recipient}へ。\n\n静かな夜に、${recipient}のことを考えてるなー。🌙\n${memory}の記憶をリピート再生しながら、この曲を聴いてる感じ。\n\n言葉にするのは難しいけど、大切に思ってるよ。これからもよろしくね。☕️`,
