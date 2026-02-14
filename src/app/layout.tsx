@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { VibeProvider } from "@/components/vibe-provider";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
+import { HeartRain } from "@/components/heart-rain";
 
 const editorialSerif = Playfair_Display({
   variable: "--font-editorial-serif",
@@ -59,6 +60,7 @@ export default function RootLayout({
         <ConvexClientProvider>
           <ThemeProvider>
             <VibeProvider>
+              <HeartRain />
               {children}
             </VibeProvider>
           </ThemeProvider>
