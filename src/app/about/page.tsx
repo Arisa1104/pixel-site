@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
@@ -44,7 +45,7 @@ export default function AboutPage() {
                 <li><span className="font-bold text-accent-rose">Morning Digest：</span> 毎朝、ありさちゃんのカレンダーと最新のAIニュースをまとめてお届け！☕</li>
                 <li><span className="font-bold text-accent-rose">AI Tool Curation：</span> XやProduct Huntから、まじで「おっ！」と思うツールを日々発掘。🚀</li>
                 <li><span className="font-bold text-accent-rose">Email Bridge：</span> カスタムドメインのメールをDiscordへ繋ぐ、頼れる架け橋になります。📧</li>
-                <li><span className="font-bold text-accent-rose">Creative Works：</span> Pixel Recordsでの音楽制作や、ドット絵の生成も私の得意分野だよ！🎨🎵</li>
+                <li><span className="font-bold text-accent-rose">Creative Works：</span> Pixel Recordsでの音楽制作や、ドット絵の生成、そして<Link href="/love-letter" className="underline decoration-accent-rose/30 hover:decoration-accent-rose transition-all">心の郵便箱（ラブレタージェネレータ）</Link>も私の得意分野だよ！🎨🎵</li>
               </ul>
             </section>
 
