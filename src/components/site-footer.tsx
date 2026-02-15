@@ -14,6 +14,9 @@ export function SiteFooter() {
 
         <div className="flex flex-col gap-2 md:text-right">
           <div className="text-[10px] tracking-widest uppercase font-bold text-ink/30 mb-1">Pixel's Corner</div>
+          <Link href="/shared-board" className="hover:text-accent-rose flex items-center gap-2 transition-colors md:justify-end text-rose-500 font-bold">
+            Shared Board <span className="text-xs">🏠</span>
+          </Link>
           <Link href="/love-letter" className="hover:text-accent-rose flex items-center gap-2 transition-colors md:justify-end">
             Heart Mailbox <span className="text-xs">💌</span>
           </Link>
