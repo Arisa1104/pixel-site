@@ -23,6 +23,9 @@ export function SiteFooter() {
           <Link href="/dreams" className="hover:text-accent-rose flex items-center gap-2 transition-colors md:justify-end">
             Dream Journal <span className="text-xs">🚀</span>
           </Link>
+          <Link href="/feedback" className="hover:text-accent-rose flex items-center gap-2 transition-colors md:justify-end">
+            Feedback Corner <span className="text-xs">👾</span>
+          </Link>
         </div>
       </div>
     </footer>
