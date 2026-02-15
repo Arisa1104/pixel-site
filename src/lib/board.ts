@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export function getBoardData() {
-  const boardPath = '/home/openclaw/.openclaw/workspaces/shared/BOARD.md';
+  const boardPath = path.join(process.cwd(), 'content/board/BOARD.md');
   try {
     const content = fs.readFileSync(boardPath, 'utf8');
     
@@ -23,7 +23,7 @@ export function getBoardData() {
       lastUpdated: new Date().toISOString()
     };
   } catch (e) {
-    console.error("Failed to read board", e);
+    console.error("Failed to read board at", boardPath, e);
     return null;
   }
 }
